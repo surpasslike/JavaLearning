@@ -7,7 +7,8 @@ public class MyThreadDemo {
 
         //        my1.run();
         //        my2.run();
-
+        my1.setName("坦克");
+        my2.setName("飞机");
         //void start() 导致此线程开始执行; Java虚拟机调用此线程的run方法
         my1.start();
         my2.start();
