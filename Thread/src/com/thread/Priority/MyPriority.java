@@ -1,4 +1,4 @@
-package com.itheima.Priority;
+package com.thread.Priority;
 
 import java.util.concurrent.Callable;
 

@@ -1,4 +1,4 @@
-package com.itheima.Sleep;
+package com.thread.Sleep;
 
 public class Demo {
     public static void main(String[] args) throws InterruptedException {

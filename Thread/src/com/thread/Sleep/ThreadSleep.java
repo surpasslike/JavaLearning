@@ -1,4 +1,4 @@
-package com.itheima.Sleep;
+package com.thread.Sleep;
 
 public class ThreadSleep implements Runnable {
     @Override

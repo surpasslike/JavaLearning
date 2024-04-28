@@ -1,4 +1,4 @@
-package com.itheima.Thread;
+package com.thread.Thread;
 
 public class MyThreadDemo {
     public static void main(String[] args) {

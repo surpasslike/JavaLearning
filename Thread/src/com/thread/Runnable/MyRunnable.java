@@ -1,4 +1,4 @@
-package com.itheima.Runnable;
+package com.thread.Runnable;
 
 public class MyRunnable implements Runnable {
     @Override
