@@ -29,7 +29,6 @@ public class SellTicket implements Runnable {
                         System.out.println(Thread.currentThread().getName() + "正在卖票,还剩下" + ticket + "张票");
                     }
                 }
-
             }
         }
     }
