@@ -18,8 +18,11 @@ public class Demo
 
         Thread cookerThread = new Thread(cooker);
         Thread foodieThread = new Thread(foodie);
+        //在这里我测试一下线程cookerThread的状态
+        System.out.println("new: cookerThread.getState()==" + cookerThread.getState());
 
         cookerThread.start();
+        System.out.println("start(): cookerThread.getState()==" + cookerThread.getState());
         foodieThread.start();
     }
 }
