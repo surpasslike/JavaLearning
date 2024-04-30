@@ -13,6 +13,11 @@ public class Foodie implements Runnable
     @Override
     public void run()
     {
+        //套路:
+        //1. while(true)死循环
+        //2. synchronized 锁,锁对象要唯一
+        //3. 判断,共享数据是否结束. 结束
+        //4. 判断,共享数据是否结束. 没有结束
         while (true)
         {
             synchronized (desk.getLock())
@@ -30,6 +35,8 @@ public class Foodie implements Runnable
                         desk.setCount(desk.getCount() - 1);//今天店里的销售名额-1
                     } else
                     {
+                        //没有就等待
+                        //使用什么对象当做锁,那么就必须用这个对象去调用等待和唤醒的方法.
                         try
                         {
                             desk.getLock().wait();

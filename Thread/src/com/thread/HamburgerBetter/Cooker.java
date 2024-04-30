@@ -1,7 +1,5 @@
 package com.thread.HamburgerBetter;
 
-import java.util.logging.Logger;
-
 public class Cooker implements Runnable
 {
     private final Desk desk;

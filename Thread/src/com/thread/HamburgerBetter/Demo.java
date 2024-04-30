@@ -11,10 +11,10 @@ public class Demo
 {
     public static void main(String[] args)
     {
-        Desk desk = new Desk();
-
-        Cooker cooker = new Cooker(desk);
-        Foodie foodie = new Foodie(desk);
+        Desk demoDesk = new Desk();
+        //由此上下可以知道,cooker和foodie共用的是一个Desk
+        Cooker cooker = new Cooker(demoDesk);
+        Foodie foodie = new Foodie(demoDesk);
 
         Thread cookerThread = new Thread(cooker);
         Thread foodieThread = new Thread(foodie);
